@@ -22,7 +22,7 @@ export function News({ data }: { data: NewsData }) {
           <p className="text-xs font-medium tracking-wide uppercase line-clamp-2">
             {data.imageSource}
           </p>
-          <h3 className="py-6 text-xl font-semibold leading-none line-clamp-3">
+          <h3 className="py-6 text-xl font-semibold line-clamp-3 leading-relaxed">
             {data.title}
           </h3>
           <p
@@ -32,7 +32,7 @@ export function News({ data }: { data: NewsData }) {
             {data.description}
           </p>
         </div>
-        <h3 className="py-6 text-lg font-semibold leading-none line-clamp-3">
+        <h3 className="py-6 text-lg font-semibold line-clamp-3 leading-relaxed">
           Read More
         </h3>
         <div className="flex items-center gap-2 mt-4">
