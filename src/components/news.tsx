@@ -4,7 +4,7 @@ import { NewsData } from "@/lib/getNews";
 
 export function News({ data }: { data: NewsData }) {
   return (
-    <Card className="w-full max-w-[32rem] mx-auto min-h-dvh flex flex-col flex-1 snap-center snap-always shrink-0">
+    <Card className="w-full max-w-[32rem] mx-auto min-h-screen flex flex-col flex-1 snap-center snap-always shrink-0">
       <div className="flex aspect-[1.5] overflow-hidden">
         <img
           alt="Cover image"
