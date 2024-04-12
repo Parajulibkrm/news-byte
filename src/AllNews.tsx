@@ -15,7 +15,7 @@ const AllNews = () => {
   return (
     <>
       {data?.map((news: NewsData, index: number) => (
-        <News key={index} data={news} />
+        <News key={`${news?.image}${index}`} data={news} />
       ))}
     </>
   );

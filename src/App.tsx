@@ -9,10 +9,10 @@ export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-        <main className="flex flex-col min-h-screen snap-y snap-mandatory">
+        <main className="flex flex-col min-h-screen snap-y snap-mandatory overflow-y-scroll y-scroll">
           <AllNews />
-          <ModeToggle />
         </main>
+        <ModeToggle />
       </ThemeProvider>
     </QueryClientProvider>
   );

@@ -34,7 +34,7 @@ export function News({ data }: { data: NewsData }) {
         </h3>
         <div className="flex items-center gap-2 mt-4">
           {data?.placesToRead?.map((site) => (
-            <a href={site.url} target="_blank">
+            <a href={site.url} target="_blank" key={site.url}>
               <Avatar>
                 <img
                   alt={site.siteTitle}
