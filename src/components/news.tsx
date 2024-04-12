@@ -25,7 +25,10 @@ export function News({ data }: { data: NewsData }) {
           <h3 className="py-6 text-xl font-semibold leading-none line-clamp-3">
             {data.title}
           </h3>
-          <p className="py-6 text-sm leading-snug line-clamp-8">
+          <p
+            className="py-6 text-sm leading-snug line-clamp-8"
+            style={{ overflowWrap: "anywhere" }}
+          >
             {data.description}
           </p>
         </div>
