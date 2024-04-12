@@ -22,7 +22,6 @@ async function getHTML(url: string) {
 }
 
 async function extractNewsData() {
-  console.log(import.meta.env);
   const url = import.meta.env.VITE_NEWS_URL;
   if (!url) {
     console.error("NEWS_URL is not set.");
